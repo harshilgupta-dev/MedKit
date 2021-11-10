@@ -40,7 +40,8 @@
             margin-bottom: 1%;
             border-radius: 10px;
             width: 20%;
-
+            box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
+            overflow: hidden;
         }
         .sbc-card img{
             padding-left: 12%;
@@ -59,71 +60,29 @@
         .tb-discount{
             color: green;
         }
-        a{
+        .sbc-card a{
             text-decoration: none;
+            color: black;
         }
-        .slider1{
-            position: relative;
-        }
-        .box{
-            width:300px;
-            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-            border-radius:10px;
-            overflow: hidden;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-        }
-        .slide-img{
-            height: 300px;
-        }
-        .slide-img img{
-            width: 100%;
-            object-fit: cover;
-            box-sizing: border-box;
-        }
-        .detail-box{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-        .type{
-            display: flex;
-            flex-direction: column;
-        }
-        .type a{
-            color:#222222;
-            margin: 5px 0px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            padding-right: 8px;
-        }
-        .type span{
-            color: rgba(26, 26, 26, .5);
-        }
-        .price{
-            color: #333333;
-            font-weight: 600;
-            font-size: 1.1rem;
-            letter-spacing: .5px;
-        }
-        
+        .sbc-card a:hover{
+            color: orange;
+        } 
+
     </style>
 </head>
 <body>
     <header>
         <div class="head-container">
             <div class="logo-side">
-                <img style="width: 200px; height: 90px;" src="../Images/logo.png" alt="">
+                <a href="index.html">
+                    <img style="width: 200px; height: 90px;" src="../Images/logo.png" alt="">
+                </a>
+                
             </div>
             <div class="search-side">
                 <div class="search-border">
                         <div class="pincode">
-                            <a href="">
+                            <a href="#">
                             <p>Deliver to <span>202001, Aligarh</span>    <i class="fa fa-map-marker"></i></p>
                             </a>
                         </div>
@@ -132,17 +91,16 @@
                                 <input type="text" placeholder="Search For Medicines/ Health Care Products">    
                             </div>
                             <div class="search-icon">
-                                <i class="fa fa-search"></i>
-                
+                                <a href="#"><i class="fa fa-search"></i></a>
                             </div>
                         </div>
                 </div>
                 <div class="menu">
                     <div class="menu-left">
                         <ul>
-                            <a href=""><img src="../Images/drug.png" alt=""><li>Medicine</li></a>
-                            <a href=""><img src="../Images/health-insurance.png" alt=""><li>Healthcare Products</li></a>
-                            <a href=""><img src="../Images/medical-history.png" alt=""><li>Lab Tests</li></a>
+                            <a href="./Pages/Product.html"><img src="../Images/drug.png" alt=""><li>Medicine</li></a>
+                            <a href="./Pages/Product.html"><img src="../Images/health-insurance.png" alt=""><li>Healthcare Products</li></a>
+                            <a href="./Pages/Product.html"><img src="../Images/medical-history.png" alt=""><li>Lab Tests</li></a>
                         </ul>
                     </div>
                     <div class="menu-right">
@@ -190,84 +148,122 @@
     <!-- Card Container 1 Start -->
     <div class="card-container">
         <div class="card1">
-            <div class="card-left"><img src="Images/Wellnessnew.svg" alt=""></div>
-            <div class="card-right">
-                <p class="card-heading">Order Medicine</p>
-                <p class="card-discount">Save Upto 60% off</p>
-                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-            </div>
+            <a href="#link3">
+                <div class="card-left"><img src="Images/Wellnessnew.svg" alt=""></div>
+                <div class="card-right">
+                    <p class="card-heading">Order Medicine</p>
+                    <p class="card-discount">Save Upto 60% off</p>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </a>
+            
         </div>
         <div class="card2">
-            <div class="card-left"><img src="Images/Beautynew.svg" alt=""></div>
-            <div class="card-right">
-                <p class="card-heading">Beauty</p>
-                <p class="card-discount">Save Upto 40% off</p>
-                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-            </div>
+            <a href="#link2">
+                <div class="card-left"><img src="Images/Beautynew.svg" alt=""></div>
+                <div class="card-right">
+                    <p class="card-heading">Beauty</p>
+                    <p class="card-discount">Save Upto 40% off</p>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </a>
+            
         </div>
         <div class="card3">
-            <div class="card-left"><img src="Images/ordermedicinnew.svg" alt=""></div>
-            <div class="card-right">
-                <p class="card-heading">Wellness</p>
-                <p class="card-discount">Save Upto 15% off</p>
-                <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-            </div>
+            <a href="#link1">
+                <div class="card-left"><img src="Images/ordermedicinnew.svg" alt=""></div>
+                <div class="card-right">
+                    <p class="card-heading">Wellness</p>
+                    <p class="card-discount">Save Upto 15% off</p>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </a>
+            
         </div>
     </div>
     <!-- Shop By Category -->
-    <div class="category-container">
+    <div class="category-container" id="link3">
         <div class="category-heading-content">
             <span id="category-heading">Shop by Category</span>
-            <span id="category-view-All"> <a href="">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a> </span>
+            <span id="category-view-All"> <a href="./Pages/Product.html">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a> </span>
         
         </div>
         <div class="card-row">
             <div class="sbc-card">
-                <img src="Images/treatments_0.jpg" alt="">
-                <p>Treatment</p>
+                <a href="./Pages/Product.html">
+                    <img src="Images/treatments_0.jpg" alt="">
+                    <p>Treatment</p>
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img src="Images/covid-essentials_0.jpg" alt="">
-                <p>Covid Essentials</p>
+                <a href="./Pages/Product.html">
+                    <img src="Images/covid-essentials_0.jpg" alt="">
+                    <p>Covid Essentials</p>
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img width="200px" height="200px" src="Images/Mom_baby_1.jpg" alt="">
-                <p>Mom & Baby</p>
+                <a href="./Pages/Product.html">
+                    <img width="200px" height="200px" src="Images/Mom_baby_1.jpg" alt="">
+                    <p>Mom & Baby</p>
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img width="200px" height="200px" src="Images/skin-care_2.jpg" alt="">
-                <p>Skin Care</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img width="200px" height="200px" src="Images/skin-care_2.jpg" alt="">
+                    <p>Skin Care</p>
+
+                </a>
+                            </div>
             <div class="sbc-card">
-                <img src="Images/ayush_0.jpg" alt="">
-                <p>Ayush</p>
+                <a href="./Pages/Product.html">
+                    <img src="Images/ayush_0.jpg" alt="">
+                    <p>Ayush</p>
+    
+                </a>
             </div>
         </div>
         <div class="card-row">
             <div class="sbc-card">
-                <img src="Images/eyewear_0.jpg" alt="">
-                <p>Eye Wear</p>
+                <a href="./Pages/Product.html">
+                    <img src="Images/eyewear_0.jpg" alt="">
+                    <p>Eye Wear</p>
+ 
+                </a>
+                           </div>
+            <div class="sbc-card">
+                <a href="./Pages/Product.html">
+                    <img src="Images/sexual_wellness_0.jpg" alt="">
+                    <p>Sexual Wellness</p>
+                </a>
             </div>
             <div class="sbc-card">
-                <img src="Images/sexual_wellness_0.jpg" alt="">
-                <p>Sexual Wellness</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img src="Images/surgical_0.jpg" alt="">
+                    <p>Surgical</p>
+ 
+                </a>
+                           </div>
             <div class="sbc-card">
-                <img src="Images/surgical_0.jpg" alt="">
-                <p>Surgical</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img src="Images/devices_0.jpg" alt="">
+                    <p>Devices</p>
+  
+                </a>
+                          </div>
             <div class="sbc-card">
-                <img src="Images/devices_0.jpg" alt="">
-                <p>Devices</p>
-            </div>
-            <div class="sbc-card">
-                <img src="Images/fitness_0.jpg" alt="">
-                <p>Fitness</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img src="Images/fitness_0.jpg" alt="">
+                    <p>Fitness</p>
+  
+                </a>
+                          </div>
         </div>
     </div>
     <!-- top Brands -->
-    <div class="top-brands-container">
+    <div class="top-brands-container" id="link2">
         <div class="category-heading-content">
             <span id="category-heading">Top Brands</span>
             <span id="category-view-All"> <a href="">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a> </span>
@@ -275,85 +271,186 @@
         </div>
         <div class="card-row">
             <div class="sbc-card">
-                <img src="Images/mamaearth.jpg" alt="">
+                <a href="">
+                    <img src="Images/mamaearth.jpg" alt="">
                 <p>Mamaearth</p>
-                <p class="tb-discount">UP TO 39% OFF</p>
+                <p class="tb-discount">UP TO 39% OFF</p>    
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img src="Images/himalaya.jpg" alt="">
+                <a href="">
+                    <img src="Images/himalaya.jpg" alt="">
                 <p>Himalaya</p>
-                <p class="tb-discount">UP TO 20% OFF</p>
+                <p class="tb-discount">UP TO 20% OFF</p>    
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img width="200px" height="200px" src="Images/hashmi.jpg" alt="">
+                <a href="">
+                    <img width="200px" height="200px" src="Images/hashmi.jpg" alt="">
                 <p>Hashmi</p>
                 <p class="tb-discount">UP TO 5% OFF</p>
-            </div>
+    
+                </a>
+                            </div>
             <div class="sbc-card">
-                <img width="200px" height="200px" src="Images/dettol.jpg" alt="">
+                <a href="">
+                    <img width="200px" height="200px" src="Images/dettol.jpg" alt="">
                 <p>Dettol</p>
-                <p class="tb-discount" >UP TO 18% OFF</p>
+                <p class="tb-discount" >UP TO 18% OFF</p    
+                </a>
+                >
             </div>
             <div class="sbc-card">
-                <img src="Images/dabur.jpg" alt="">
+                <a href="">
+                    <img src="Images/dabur.jpg" alt="">
                 <p>Dabur</p>
-                <p class="tb-discount">UP TO 10% OFF</p>
+                <p class="tb-discount">UP TO 10% OFF</p>    
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img src="Images/dr-vaidyas.jpg" alt="">
+                <a href="">
+                    <img src="Images/dr-vaidyas.jpg" alt="">
                 <p>Dr Vaidyas</p>
-                <p class="tb-discount" >UP TO 16% OFF</p>
+                <p class="tb-discount" >UP TO 16% OFF</p>    
+                </a>
             </div>
             
         </div>
     </div>
     <!-- Personal care -->
-    <div class="personal-care-container">
+    <div class="personal-care-container" id="link1">
         <div class="category-heading-content">
             <span id="category-heading">Personal Care</span>
-            <span id="category-view-All"> <a href="">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a> </span>
+            <span id="category-view-All"> <a href="./Pages/Product.html">View All <i class="fa fa-angle-right" aria-hidden="true"></i></a> </span>
         
         </div>
         <div class="card-row">
             <div class="sbc-card">
-                <img style="width: 250px; height: 250px;" src="Images/Mens_Care_2.jpg" alt="">
-                <p>Men's Care</p>
+                <a href="./Pages/Product.html">
+                    <img style="width: 250px; height: 250px;" src="Images/Mens_Care_2.jpg" alt="">
+                    <p>Men's Care</p>
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img style="width: 250px; height: 250px;" src="Images/skin-treatment_1.jpg" alt="">
-                <p>Skin Treatment</p>
+                <a href="./Pages/Product.html">
+                    <img style="width: 250px; height: 250px;" src="Images/skin-treatment_1.jpg" alt="">
+                    <p>Skin Treatment</p>
+                </a>
+                
             </div>
             <div class="sbc-card">
-                <img style="width: 250px; height: 250px;" src="Images/Body_Care_4.jpg" alt="">
-                <p>Body Care</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img style="width: 250px; height: 250px;" src="Images/Body_Care_4.jpg" alt="">
+                    <p>Body Care</p>
+
+                </a>
+                            </div>
             <div class="sbc-card">
-                <img style="width: 250px; height: 250px;" src="Images/Beard-Oil.jpg" alt="">
-                <p>Beard</p>
-            </div>
+                <a href="./Pages/Product.html">
+                    <img style="width: 250px; height: 250px;" src="Images/Beard-Oil.jpg" alt="">
+                    <p>Beard</p>
+    
+                </a>
+                        </div>
             <div class="sbc-card">
-                <img style="width: 250px; height: 250px;" src="Images/shampoos-and-conditioners_2.jpg" alt="">
-                <p>Shampoos & conditioners</p>
+                <a href="./Pages/Product.html">
+                    <img style="width: 250px; height: 250px;" src="Images/shampoos-and-conditioners_2.jpg" alt="">
+                    <p>Shampoos & conditioners</p>
+                </a>
+                
             </div>
         </div>
-        
     </div>
-    <!-- <div class="slider1">
-        <div class="box">
-            <div class="slide-img">
-                <img src="Images/skin-care_2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-                <div class="type">
-                    <a href="#">Rabbed</a>
-                    <span>No Arrival</span>+
-                </div>
-                <a href="#" class="price">Rs 200</a>
-            </div>
-        </div>    
-    </div> -->
-    
 
+    <footer>
+        <section class="sec-1">
+          <section class="about">
+            <h2>About</h2>
+            <p>
+              Betalabs.in CODE WANTS TO BE SIMPLE is an initiative to help the
+              upcoming programmers with the code. Beta-Labs focuses on providing
+              the most efficient code or snippets as the code wants to be simple.
+              We will help programmers build up concepts in different programming
+              languages that include C, C++, Java, HTML, CSS, Bootstrap,
+              JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </section>
+          <section class="link1">
+            <h2>Categories</h2>
+            <ul>
+              <li><a href="#">C</a></li>
+              <li><a href="#">UI Desing</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Hybrid Apps</a></li>
+            </ul>
+          </section>
+          <section class="link2">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </section>
+          <section class="link3">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <i class="fa fa-home"></i> <span>Aligarh,Uttar Pradesh, India</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>harshilgupta0099@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa fa-phone-square"></i>
+                <span>Mobile: 844xxxx8070 </span>
+              </li>
+              <li>
+                <i class="fa fa-facebook-official"></i>
+                <a href="#">Harshil Gupta</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <hr width="100%" noshade/>
+        <section class="sec-3">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="sec-4">
+          <p>
+            Copyright © 2021 All Rights Reserved by
+            <a href="https://www.beta-labs.in">Harshil Gupta.</a>
+          </p>
+        </section>
+      </footer>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

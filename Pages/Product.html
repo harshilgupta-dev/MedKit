@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Icons/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="../CSS/BootStarp/bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/BootStarp/bootstrap-4.6.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../CSS/BootStarp/bootstrap-4.6.1-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../CSS/productStyle.css">
+
+    <title>MedKit</title>
+    <style>
+        /* <!-- Shop By Category --> */
+        .category-container,.category-heading-content{
+            padding: 2%;
+            width: 100%;
+        }
+        #category-heading{
+            font-size: 150%;
+            font-weight: bold;
+        }
+        .card-row{
+            display: inline-flex;
+            width: 100%;
+            padding-left: 5px;
+            padding-right: 5px;   
+        }
+        .sbc-card{
+            background-color: white;
+            margin-right: 3%;
+            margin-bottom: 3%;
+            border-radius: 10px;
+            width: 25%;
+            box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
+            height: 400px;
+            position: relative;
+        }
+        .sbc-card img{
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-bottom: 20px;
+        }
+        .sbc-card p{
+            text-align: left;
+            font-size: 110%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .product-desc{
+            font-weight: bold;
+        }
+        .best-price{
+            color: grey;
+        }
+        .best-price span{
+            color:#EF42A2;
+            font-weight: bold;
+        }
+        .sbc-card a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .sbc-card a:hover{
+            background-color: orangered;
+        }
+        .atc{
+            color: white;
+            background-color: teal;
+            text-decoration: none;
+            padding: 10px 25%;
+            border-radius: 7px;
+            position: absolute;
+            top: 85%;
+            left: 8%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo-side">
+                <a href="index.html">
+                    <img style="width: 200px; height: 90px;" src="../Images/logo.png" alt="">
+                </a>
+                
+            </div>
+            <div class="search-side">
+                <div class="search-border">
+                        <div class="pincode">
+                            <a href="#">
+                            <p>Deliver to <span>202001, Aligarh</span>    <i class="fa fa-map-marker"></i></p>
+                            </a>
+                        </div>
+                        <div class="med-search">
+                            <div class="search">
+                                <input type="text" placeholder="Search For Medicines/ Health Care Products">    
+                            </div>
+                            <div class="search-icon">
+                                <a href="#"><i class="fa fa-search"></i></a>
+                            </div>
+                        </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-left">
+                        <ul>
+                            <a href="./Pages/Product.html"><img src="../Images/drug.png" alt=""><li>Medicine</li></a>
+                            <a href="./Pages/Product.html"><img src="../Images/health-insurance.png" alt=""><li>Healthcare Products</li></a>
+                            <a href="./Pages/Product.html"><img src="../Images/medical-history.png" alt=""><li>Lab Tests</li></a>
+                        </ul>
+                    </div>
+                    <div class="menu-right">
+                        <a href=""><li><i class="fa fa-user-circle" aria-hidden="true"></i> Login/Signup</li></a>
+                        <a href=""><li><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</li></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop By Category -->
+    <div class="category-container">
+        <div class="category-heading-content">
+            <span id="category-heading">Products found</span>
+        </div>
+        <div class="card-row">
+            <div class="sbc-card">
+                    <img src="../Images/contec_pulse_oximeter_cms50d_0_0.jpg" alt="">
+                    <p class="product-desc">Fingerprint Pulse Oximeter</p>
+                    <p class="best-price">Best Price* <span>Rs.714</span></p>
+                    <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/dettol_antiseptic_liquid_1_ltr_0_1.jpg" alt="">
+                <p class="product-desc">Dettol antiseptic liquid 1ltr</p>
+                <p class="best-price">Best Price* <span>Rs.320.84</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/hyginium_hand_sanitizer_500_ml_0_3.jpg" alt="">
+                <p class="product-desc">Hyginium Hand Sanitizer 500ml</p>
+                <p class="best-price">Best Price* <span>Rs.999</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/renu_fresh_multi_purpose_solution_500_ml_0_1.jpg" alt="">
+                <p class="product-desc">Renu fresh multi purpose Solution 500ml</p>
+                <p class="best-price">Best Price* <span>Rs.500</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+                       
+        </div>
+        <div class="card-row">
+            <div class="sbc-card">
+                    <img src="../Images/moods_condoms_all_night_climax_delay_20s_0_1.jpg" alt="">
+                    <p class="product-desc">Moods condoms all night climax delay 20s</p>
+                    <p class="best-price">Best Price* <span>Rs.133</span></p>
+                    <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/nutrafirst_biotin_10000_mcg_capsule_60s_0_0.jpg" alt="">
+                <p class="product-desc">Nutrafirst Biotin 10000mcg capsule 60s</p>
+                <p class="best-price">Best Price* <span>Rs.559</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/bioderma_cicabio_cream_40_ml_0.jpg" alt="">
+                <p class="product-desc">Bioderma Cicabio cream 40ml</p>
+                <p class="best-price">Best Price* <span>Rs.1365</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/ring_guard_plus_cream_20_gm_0.jpg" alt="">
+                <p class="product-desc">Ring Guard plus cream 20gm</p>
+                <p class="best-price">Best Price* <span>Rs.87</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+                       
+        </div>
+        <div class="card-row">
+            <div class="sbc-card">
+                    <img src="../Images/man_arden_7x_beard_oil_musk_30_ml_0.jpg" alt="">
+                    <p class="product-desc">Man Arden 7x beard oil musk 30ml</p>
+                    <p class="best-price">Best Price* <span>Rs.133</span></p>
+                    <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/sri_sri_tattva_nigella_oil_veg_capsule_30_s_0.jpg" alt="">
+                <p class="product-desc">Sri Sri Tattva nigella oil veg capsule 30</p>
+                <p class="best-price">Best Price* <span>Rs.256</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/ustraa_beard_growth_oil_35_ml_0_1.jpg" alt="">
+                <p class="product-desc">ustraa Beard growth oil 35ml</p>
+                <p class="best-price">Best Price* <span>Rs.450</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+            <div class="sbc-card">
+                <img src="../Images/allen_livia_liver_tonic_200_ml_0.jpg" alt="">
+                <p class="product-desc">Allen Livia liver tonic 200ml</p>
+                <p class="best-price">Best Price* <span>Rs.87</span></p>
+                <a class="atc" href="">ADD TO CART</a>
+            </div>
+                       
+        </div>
+    </div>
+    
+    <footer>
+        <section class="sec-1">
+          <section class="about">
+            <h2>About</h2>
+            <p>
+              Betalabs.in CODE WANTS TO BE SIMPLE is an initiative to help the
+              upcoming programmers with the code. Beta-Labs focuses on providing
+              the most efficient code or snippets as the code wants to be simple.
+              We will help programmers build up concepts in different programming
+              languages that include C, C++, Java, HTML, CSS, Bootstrap,
+              JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </section>
+          <section class="link1">
+            <h2>Categories</h2>
+            <ul>
+              <li><a href="#">C</a></li>
+              <li><a href="#">UI Desing</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Hybrid Apps</a></li>
+            </ul>
+          </section>
+          <section class="link2">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </section>
+          <section class="link3">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>
+                <i class="fa fa-home"></i> <span>Aligarh,Uttar Pradesh, India</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>harshilgupta0099@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa fa-phone-square"></i>
+                <span>Mobile: 844xxxx8070 </span>
+              </li>
+              <li>
+                <i class="fa fa-facebook-official"></i>
+                <a href="#">Harshil Gupta</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <hr width="100%" noshade/>
+        <section class="sec-3">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="sec-4">
+          <p>
+            Copyright © 2021 All Rights Reserved by
+            <a href="https://www.beta-labs.in">Harshil Gupta.</a>
+          </p>
+        </section>
+      </footer>
+</body>
+</html>
