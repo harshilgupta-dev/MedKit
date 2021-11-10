@@ -1,0 +1,169 @@
+*{
+    padding: 0;margin: 0;
+}
+/* Header Start */
+header{
+    background-color: #10847E;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.head-container{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.logo-side{
+    float: left;
+    width: 16%;
+}
+.search-side{
+    float: right;
+    width: 84%;
+}
+.search-border{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 45px;
+    width: 76%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.2%;
+}
+.pincode{
+    float: left;
+    width: 30%;
+}
+.pincode a{
+    text-decoration: none;
+}
+.pincode p{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: teal;
+    font-size: 18px;
+}
+.pincode span{
+    font-weight: bold;
+}
+.pincode i{
+    font-size: 25px;
+}
+.med-search{
+    width: 70%;
+    float:right;
+}
+.med-search i{
+    padding-left: 10px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    border-left: 1px solid grey;
+    box-sizing: border-box;
+    color: black;
+    font-size: 16px;
+}
+.search{
+    width: 92%;
+    float: left;
+}
+.search-icon{
+    background-color: #F4F7FB;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 41px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.search-icon i{
+    color: teal;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: teal;
+    font-size: 16px;
+}
+.menu-left{
+    float: left;
+}
+.menu-left ul,.menu-right ul{
+    list-style: none;
+}
+.menu-left li,.menu-right li{
+    display: inline-block;
+}
+.menu-left a,.menu-right a{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    margin: 15px;
+    font-family: sans-serif;
+    
+}
+.menu-left img{
+    width: 20px; height: 20px; margin-right: 2px;
+} 
+.menu-right{
+    float:right;
+}
+
+/* Header End */
+/* Card Start */
+.card-container{
+    width: 100%;
+    padding: 2%;
+    display: inline-flex;
+}
+body{
+    background-color: #F3F7FB;
+}
+.card1,.card2,.card3{
+    background-color: white;
+    width: 40%;
+    margin-right: 2%;
+    border-radius: 10px;
+    padding: 1%;
+    position: relative;
+}
+.card-left{
+    float: left;
+    margin-right: 3%;
+}
+.card-left img{
+    padding-top: 10px;
+    width: 90%;
+    height: 90%;
+}
+.card-heading{
+    font-weight: bold;
+    font-size: 140%;
+}
+.card-discount{
+    color: green;
+    position: absolute;
+    top:45%;
+    left: 26%;
+    font-weight: 450;
+}
+.card-right i{
+    float: right;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+/* Card done */
+
